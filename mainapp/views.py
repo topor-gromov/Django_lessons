@@ -2,6 +2,7 @@
 
 from django.shortcuts import get_object_or_404
 from django.views.generic import TemplateView
+from django.core.paginator import Paginator
 
 from mainapp import models as mainapp_models
 
@@ -11,12 +12,20 @@ class MainPageView(TemplateView):
 
 class NewsPageView(TemplateView):
     template_name = "mainapp/news.html"
+    paginated_by = 3
+
 
     def get_context_data(self, **kwargs):
         # Get all previous data
+        page_number = self.request.GET.get(
+            'page',
+            1
+        )
+        paginator = Paginator(mainapp_models.News.objects.all(), self.paginated_by)
+        page = paginator.get_page(page_number)
         context = super().get_context_data(**kwargs)
         # Create your own data
-        context["news_qs"] = mainapp_models.News.objects.all()[:5]
+        context['page'] = page
         return context
 
 class NewsPageDetailView(TemplateView):
