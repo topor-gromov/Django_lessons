@@ -13,7 +13,6 @@ def send_feedback_mail(message_form: Dict[str, Union[int, str]]) -> None:
     logger.info(f"Send message: '{message_form}'")
     model_user = get_user_model()
     user_obj = model_user.objects.get(pk=message_form["user_id"])
-    print(user_obj)
     send_mail(
         "TechSupport Help",  # subject (title)
         message_form["message"],  # message
