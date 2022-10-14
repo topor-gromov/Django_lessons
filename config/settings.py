@@ -54,6 +54,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
+    "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -169,6 +170,11 @@ SOCIAL_AUTH_GITHUB_SECRET = "d53ff8211ea53b47ee5ae1a3d4149296aef65e97"
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
+LOCALE_PATH = [BASE_DIR / "locale"]
+
+
+SELENIUM_DRIVER_PATH_FF = BASE_DIR / "var" / "selenium" / "geckodriver"
+
 LOG_FILE = BASE_DIR / "var" / "log" / "main_log.log"
 
 LOGGING = {
@@ -227,3 +233,4 @@ CELERY_RESULT_BACKEND = "redis://localhost:6379"
 # Email as files for debug
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 EMAIL_FILE_PATH = "var/email-messages/"
+
