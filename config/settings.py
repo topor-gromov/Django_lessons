@@ -14,7 +14,7 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-load_dotenv(BASE_DIR / '.env')
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -170,8 +170,8 @@ SOCIAL_AUTH_GITHUB_SECRET = "d53ff8211ea53b47ee5ae1a3d4149296aef65e97"
 
 CRISPY_TEMPLATE_PACK = "bootstrap4"
 
-LOCALE_PATH = [BASE_DIR / "locale"]
 
+LOCALE_PATHS = [BASE_DIR / "locale"]
 
 SELENIUM_DRIVER_PATH_FF = BASE_DIR / "var" / "selenium" / "geckodriver"
 
@@ -193,9 +193,9 @@ LOGGING = {
         "console": {"class": "logging.StreamHandler", "formatter": "console"},
     },
     "loggers": {
-        "django": {"level": "INFO", "handlers": ["file"]}, #для создания более объёмного лог-файла
+        "django": {"level": "INFO", "handlers": ["console"]},
         "mainapp": {
-            "level": "INFO",
+            "level": "DEBUG",
             "handlers": ["file"],
         },
     },
@@ -233,4 +233,3 @@ CELERY_RESULT_BACKEND = "redis://localhost:6379"
 # Email as files for debug
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 EMAIL_FILE_PATH = "var/email-messages/"
-

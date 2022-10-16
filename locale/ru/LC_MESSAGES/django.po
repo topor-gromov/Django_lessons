@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-10-14 20:53+0500\n"
+"POT-Creation-Date: 2021-09-09 21:13+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,155 +20,116 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: .\authapp\forms.py:59
 msgid "Please, enter a valid age!"
 msgstr "Пожалуйста, введите корректный возраст"
 
-#: .\authapp\models.py:24
 msgid "username"
 msgstr "Имя пользователя"
 
-#: .\authapp\models.py:27
 msgid "Required. 150 characters or fewer. ASCII letters and digits only."
 msgstr "Обязательное поле. До 150 символов. Только ASCII символы и цифры"
 
-#: .\authapp\models.py:30
 msgid "A user with that username already exists."
 msgstr "Пользователь с таким именем уже существует"
 
-#: .\authapp\models.py:33
 msgid "first name"
 msgstr "Имя"
 
-#: .\authapp\models.py:34
 msgid "last name"
 msgstr "Фамилия"
 
-#: .\authapp\models.py:38
 msgid "email address"
 msgstr "Адрес электронной почты"
 
-#: .\authapp\models.py:42
 msgid "A user with that email address already exists."
 msgstr "Пользователь с таким адресом электронной почты уже существует"
 
-#: .\authapp\models.py:46
 msgid "staff status"
 msgstr "Статус обслуживающего персонала"
 
-#: .\authapp\models.py:48
 msgid "Designates whether the user can log into this admin site."
 msgstr ""
 
-#: .\authapp\models.py:51
 msgid "active"
 msgstr "Активен"
 
-#: .\authapp\models.py:54
 msgid ""
 "Designates whether this user should be treated as active.             "
 "Unselect this instead of deleting accounts."
 msgstr ""
 
-#: .\authapp\models.py:58
 msgid "date joined"
 msgstr "Дата регистрации"
 
-#: .\authapp\models.py:67
 msgid "user"
 msgstr "Пользователь"
 
-#: .\authapp\models.py:68
 msgid "users"
 msgstr "Пользователи"
 
-#: .\authapp\views.py:16
 #, python-format
 msgid "Login success!<br>Hi, %(username)s"
-msgstr "Вход произведён! Привет, %(username)s"
+msgstr ""
 
-#: .\authapp\views.py:36
 msgid "See you later!"
 msgstr "До скорых встреч!"
 
-#: .\mainapp\forms.py:29
-msgid "Enter your message"
-msgstr "Введите Ваше сообщение"
-
-#: .\mainapp\forms.py:30
-msgid "Message"
-msgstr "Сообщение"
-
-#: .\mainapp\models.py:23 .\mainapp\models.py:24
-#: .\templates\includes\main_menu.html:20
-msgid "News"
-msgstr "Новости"
-
-#: .\mainapp\models.py:55
 msgid "Course"
 msgstr "Курс"
 
-#: .\mainapp\models.py:56
-msgid "User"
-msgstr "Пользователь"
+msgid "Mark deleted"
+msgstr "Помечен удалённым"
 
-#: .\mainapp\models.py:57
-msgid "No feedback"
-msgstr "Без отзыва"
-
-#: .\mainapp\models.py:57
-msgid "Feedback"
-msgstr "Отзыв"
-
-#: .\mainapp\models.py:58
-msgid "Rating"
-msgstr "Рейтинг"
-
-#: .\mainapp\models.py:85
-msgid "Lesson"
-msgstr "Урок"
-
-#: .\mainapp\models.py:86
-msgid "Lessons"
-msgstr "Уроки"
-
-#: .\mainapp\models.py:104
-msgid "Teacher"
-msgstr "Преподаватель"
-
-#: .\mainapp\models.py:105
-msgid "Teachers"
-msgstr "Преподаватели"
-
-#: .\mainapp\views.py:126
-msgid "Message sended"
-msgstr "Сообщение отправлено"
-
-#: .\mainapp\views.py:137
-msgid "You can send only one message per 5 minutes"
-msgstr "Вы можете послать сообщение раз в 5 минут"
-
-#: .\templates\includes\main_menu.html:26
 msgid "Courses"
 msgstr "Курсы"
 
-#: .\templates\includes\main_menu.html:34
+msgid "Enter your message"
+msgstr "Введите Ваше сообщение"
+
+msgid "Message"
+msgstr "Сообщение"
+
+msgid "News"
+msgstr "Новости"
+
+msgid "User"
+msgstr "Пользователь"
+
+msgid "No feedback"
+msgstr "Без отзыва"
+
+msgid "Feedback"
+msgstr "Отзыв"
+
+msgid "Rating"
+msgstr "Рейтинг"
+
+msgid "Lesson"
+msgstr "Урок"
+
+msgid "Lessons"
+msgstr "Уроки"
+
+msgid "Teacher"
+msgstr "Преподаватель"
+
+msgid "Teachers"
+msgstr "Преподаватели"
+
+msgid "Message sended"
+msgstr "Сообщение отправлено"
+
+msgid "You can send only one message per 5 minutes"
+msgstr "Вы можете послать сообщение раз в 5 минут"
+
+msgid "Django site admin"
+msgstr "Административный раздел сайта"
+
 msgid "Profile"
 msgstr "Профиль"
 
-#: .\templates\includes\main_menu.html:57
 msgid "Enter"
 msgstr "Вход"
 
-#: .\templates\includes\main_menu.html:64
 msgid "Contacts"
 msgstr "Контакты"
-
-#~ msgid "Age"
-#~ msgstr "Возраст"
-
-#~ msgid "Mark deleted"
-#~ msgstr "Помечен удалённым"
-
-#~ msgid "Django site admin"
-#~ msgstr "Административный раздел сайта"
