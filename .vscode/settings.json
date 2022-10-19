@@ -1,5 +1,7 @@
 {
-    "python.autoComplete.extraPaths": [],
-    "python.formatting.provider": "black",
-    "python.analysis.extraPaths": []
+    "python.testing.pytestArgs": [
+        "."
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
 }
